@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Task7</string>
+    <string name="start">Start</string>
+    <string name="courses">Courses</string>
 </resources>

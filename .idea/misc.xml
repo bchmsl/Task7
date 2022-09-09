@@ -5,9 +5,10 @@
       <map>
         <entry key="..\:/Users/bchmsl/AndroidStudioProjects/Task7/app/src/main/res/drawable/ic_play.xml" value="0.2395" />
         <entry key="..\:/Users/bchmsl/AndroidStudioProjects/Task7/app/src/main/res/drawable/rectangle.xml" value="0.2395" />
+        <entry key="..\:/Users/bchmsl/AndroidStudioProjects/Task7/app/src/main/res/drawable/rectangle_item.xml" value="0.2295" />
         <entry key="..\:/Users/bchmsl/AndroidStudioProjects/Task7/app/src/main/res/layout/activity_main.xml" value="0.2066869300911854" />
-        <entry key="..\:/Users/bchmsl/AndroidStudioProjects/Task7/app/src/main/res/layout/layout_active_courses.xml" value="1.0" />
-        <entry key="..\:/Users/bchmsl/AndroidStudioProjects/Task7/app/src/main/res/layout/layout_new_courses.xml" value="0.4109375" />
+        <entry key="..\:/Users/bchmsl/AndroidStudioProjects/Task7/app/src/main/res/layout/layout_active_courses.xml" value="0.67" />
+        <entry key="..\:/Users/bchmsl/AndroidStudioProjects/Task7/app/src/main/res/layout/layout_new_courses.xml" value="0.5" />
       </map>
     </option>
   </component>

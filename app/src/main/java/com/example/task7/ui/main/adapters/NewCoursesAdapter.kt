@@ -1,14 +1,20 @@
 package com.example.task7.ui.main.adapters
 
+import android.content.res.ColorStateList
 import android.graphics.Color
+import android.graphics.drawable.Icon
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
+import com.example.task7.R
 import com.example.task7.databinding.LayoutNewCoursesBinding
+import com.example.task7.extensions.setImage
+import com.example.task7.extensions.toColor
 import com.example.task7.extensions.toMinutes
 import com.example.task7.model.CoursesResponse
+import com.example.task7.model.IconType
 
 class NewCoursesAdapter :
     ListAdapter<CoursesResponse.NewCourse, NewCoursesAdapter.CoursesViewHolder>(ActiveCoursesCallback()) {
@@ -19,8 +25,15 @@ class NewCoursesAdapter :
             binding.apply {
                 tvTitle.text = currentItem.title
                 tvQuestion.text = currentItem.question
-                tvDuration.text = currentItem.duration.toMinutes()
-                root.background.setTint(Color.parseColor("#${currentItem.mainColor}"))
+                tvDuration.text = currentItem.duration?.toMinutes()
+                root.background.setTint(currentItem.mainColor.toColor())
+                ivButtonStart.imageTintList = ColorStateList.valueOf(currentItem.mainColor.toColor())
+                val icon = when(currentItem.iconType){
+                    IconType.CARD.value -> IconType.CARD.icon
+                    IconType.SETTINGS.value -> IconType.SETTINGS.icon
+                    else -> R.drawable.ic_launcher_foreground
+                }
+                ivIcon.setImageResource(icon)
             }
         }
     }
